@@ -1,0 +1,10 @@
+<h2>Welcome to the most advanced login protocol ever created!</h2>
+<hr>
+<% if @name %>
+  <h2> <%= "hi, #{@name}" %> </h2>
+  <h3> <%= link_to "Click here to logout :(", logout_path, method: :destroy %> </h3>
+<% else %>
+  <h3>To login, <%= link_to "click here", login_path %> </h3>
+<% end %>
+<hr>
+<h4>&copy; 2018 Makda Enterprises</h4>
