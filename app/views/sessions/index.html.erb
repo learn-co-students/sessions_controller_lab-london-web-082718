@@ -1,0 +1,8 @@
+<h1> Welcome! </h1>
+
+<%if @name != nil%>
+<p><%= Hi "#{@name}"%></p>
+<%= link_to 'Logout', logout_path, method: destroy %>
+<% else %>
+<%= link_to 'Login', login_path %>
+<%end%>
